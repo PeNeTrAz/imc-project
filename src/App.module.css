@@ -39,6 +39,10 @@ header .headerContainer {
     outline: 0;
 }
 
+.container .leftSide input:disabled {
+    opacity: 0.5;
+}
+
 .container .leftSide button {
     background-color: #227c9d;
     color: white;
@@ -54,6 +58,10 @@ header .headerContainer {
 
 .container .leftSide button:hover {
     opacity: 0.7;
+}
+
+.container .leftSide button:disabled {
+    opacity: 0.5;
 }
 
 .container .rightSide {
