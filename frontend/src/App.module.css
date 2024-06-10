@@ -1,0 +1,120 @@
+/* Estilos para a seção principal */
+body {
+    background-color: #333;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para o lado esquerdo e direito */
+.leftSide, .rightSide {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Estilos para o título no lado esquerdo */
+.leftSide h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para todos os inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #555;
+    color: #fff;
+}
+
+/* Estilos para os botões */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0b037a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Estilos para a grade */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Estilos para o lado direito grande */
+.rightBig {
+    position: relative;
+}
+
+/* Estilos para a seta no lado direito */
+.rightArrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para mensagens de erro */
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para mensagens de sucesso */
+.successMessage {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #6c757d; 
+    border-radius: 4px;
+    font-size: 16px;
+    appearance: none;
+    cursor: pointer;
+    color: #fff; 
+    background-color: #555; 
+}
