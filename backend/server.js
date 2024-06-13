@@ -8,12 +8,7 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-const levels = [
-    { name: 'Abaixo do Peso', min: 0, max: 18.5 },
-    { name: 'Normal', min: 18.5, max: 24.9 },
-    { name: 'Sobrepeso', min: 25, max: 29.9 },
-    { name: 'Obesidade', min: 30, max: 34.9 },
-];
+const levels = [{ name: 'Abaixo do Peso', min: 0, max: 18.5 }, { name: 'Normal', min: 18.5, max: 24.9 }, { name: 'Sobrepeso', min: 25, max: 29.9 }, { name: 'Obesidade', min: 30, max: 34.9 }];
 
 app.get('/imc-levels', (req, res) => {
     res.json(levels);
